@@ -1,16 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aram Finance</title>
+    <title>Aram Finance - Corporate Profile</title>
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d2c54;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .dynamic-content {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid #0d2c54;
+        }
+
+        footer {
+            background-color: #0d2c54;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+
+    <script>
+        function showContent(type) {
+            let contentArea = document.getElementById("content-area");
+
+            if (type === "vision") {
+                contentArea.innerHTML = `
+                    <h3>Vision</h3>
+                    <p>
+                    To establish Aram Finance as a leading and trusted financial institution recognized for excellence in diversified lending, responsible practices, and sustainable growth.
+                    </p>
+                `;
+            }
+
+            if (type === "mission") {
+                contentArea.innerHTML = `
+                    <h3>Mission</h3>
+                    <p>
+                    Aram Finance is committed to delivering efficient, transparent, and flexible lending solutions that empower individuals and businesses to achieve financial stability and long-term success.
+                    </p>
+                `;
+            }
+
+            if (type === "goals") {
+                contentArea.innerHTML = `
+                    <h3>Goals</h3>
+                    <ul>
+                        <li>Provide diversified and customer-centric loan products</li>
+                        <li>Ensure transparent pricing and ethical lending standards</li>
+                        <li>Maintain strong governance, compliance, and risk management systems</li>
+                        <li>Leverage technology to enhance operational efficiency</li>
+                        <li>Build long-term stakeholder value through sustainable growth</li>
+                    </ul>
+                `;
+            }
+        }
+    </script>
+
 </head>
+
 <body>
 
-    <h1>Welcome to Aram Finance</h1>
+<header>
+    <h1>ARAM FINANCE</h1>
+    <p>Corporate Profile Statement</p>
 
-    <!-- Clickable Link -->
-    <a href="corporate-profile.html">
-        Click Here to View Corporate Profile
-    </a>
+    <nav>
+        <a onclick="showContent('vision')">Vision</a>
+        <a onclick="showContent('mission')">Mission</a>
+        <a onclick="showContent('goals')">Goals</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div id="content-area" class="dynamic-content">
+        <p>Click Vision, Mission, or Goals above to view details.</p>
+    </div>
+
+    <h3>Company Overview</h3>
+    <p>
+        Aram Finance is a dynamic and customer-focused lending institution providing diversified financial solutions to individuals, entrepreneurs, and businesses. With a commitment to integrity, transparency, and operational excellence, Aram Finance delivers reliable loan products designed to support personal aspirations and business growth.
+    </p>
+
+    <p>
+        Our portfolio includes Personal Loans, Business Loans, Vehicle Loans, Gold Loans, Emergency Loans, and SME Financing solutions tailored to meet the evolving financial needs of our clients.
+    </p>
+
+    <h3>Core Objectives</h3>
+
+    <p><strong>1. Operational Excellence</strong><br>
+    To implement efficient systems and streamlined processes that ensure timely loan approvals and superior service delivery.</p>
+
+    <p><strong>2. Responsible Lending & Risk Management</strong><br>
+    To maintain prudent credit assessment policies and strong internal controls to safeguard financial stability.</p>
+
+    <p><strong>3. Sustainable Growth</strong><br>
+    To achieve steady portfolio expansion while maintaining asset quality and financial strength.</p>
+
+    <p><strong>4. Customer Relationship Management</strong><br>
+    To build enduring client relationships based on trust, transparency, and service excellence.</p>
+
+    <p><strong>5. Digital Transformation</strong><br>
+    To integrate advanced financial technologies that enhance security, speed, and accessibility.</p>
+
+    <p><strong>6. Market Expansion</strong><br>
+    To expand geographic reach and diversify product offerings to serve broader market segments.</p>
+
+</div>
+
+<footer>
+    <p>
+        Aram Finance and Service Pvt Ltd<br>
+        Ward 5, 174/5 1st Floor<br>
+        IT to Ilanji Road, Kuthukkalvalasai<br>
+        Tenkasi – 627803
+    </p>
+</footer>
 
 </body>
 </html>
